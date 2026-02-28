@@ -83,8 +83,8 @@ const Agency = () => {
               modern frontend technologies. I don’t just write code — I build
               experiences that are fast, responsive, and user-focused. Every
               project I take on is an opportunity to learn, improve, and push my
-              limits.I’m here to create meaningful digital products that not only work
-              well, but feel right.
+              limits.I’m here to create meaningful digital products that not
+              only work well, but feel right.
             </p>
           </div>
         </div>
