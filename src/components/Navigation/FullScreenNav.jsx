@@ -3,6 +3,7 @@ import gsap from "gsap";
 import React, { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { NavbarContext } from "../../context/NavContext";
+import logo from "../../assets/images/logo.png";
 
 const FullScreenNav = () => {
   const fullNavLinksRef = useRef(null);
@@ -89,7 +90,12 @@ const FullScreenNav = () => {
       <div ref={fullNavLinksRef} className="relative h-screen flex flex-col">
         <div className="navlink flex w-full justify-between lg:p-5 p-2 items-start">
           <div className="">
-            <div className="lg:w-36 w-24">
+            <div className="flex items-center gap-2 lg:gap-3">
+              <img
+                src={logo}
+                alt="Rishav Logo"
+                className="w-10 h-10 lg:w-12 lg:h-12 object-contain rounded-full border border-white/20 shadow-md"
+              />
               <h1 className="text-3xl lg:text-4xl font-[font2] uppercase tracking-tighter text-white">
                 Rishav
               </h1>
