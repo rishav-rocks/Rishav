@@ -6,7 +6,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navigation/Navbar";
 import FullScreenNav from "./components/Navigation/FullScreenNav";
 import Footer from "./components/common/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 const App = () => {
   const location = useLocation();
   const showFooter =
@@ -23,6 +24,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {showFooter && <Footer />}
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 };
